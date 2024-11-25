@@ -344,7 +344,7 @@ public class UserEdit extends JDialog {
 				if (insert) {
 					if (groups != null) {
 						for (UserGroup group : groups) {
-							if(!group.isDeleted()) {
+							if (!group.isDeleted()) {
 								userGroupComboBox.addItem(group);
 							}
 						}
@@ -353,7 +353,7 @@ public class UserEdit extends JDialog {
 					UserGroup selectedUserGroup = null;
 					if (groups != null) {
 						for (UserGroup group : groups) {
-							if(!group.isDeleted()) {
+							if (!group.isDeleted()) {
 								userGroupComboBox.addItem(group);
 								if (user.getUserGroupName().equals(group)) {
 									selectedUserGroup = group;
